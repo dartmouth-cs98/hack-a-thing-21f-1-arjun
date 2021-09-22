@@ -5,8 +5,9 @@
 
 I wrote a simple c program (`random.c`), compiled it to WebAssembly (`random.wasm`, not committed because its binary) using [WebAssembly Explorer](https://mbebenita.github.io/WasmExplorer/), and loaded that into a simple website (`index.html`) using the JavaScript fetch api.
 
-Include some screenshots.
-[How?](https://help.github.com/articles/about-readmes/#relative-links-and-image-paths-in-readme-files)
+## Screenshot
+
+![screencap](./screencap.png)
 
 ## Who Did What?
 
