@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html>
+
+   <!-- Full html template from Plotly codepen: https://plotly.com/javascript/statistical-charts/ -->
+   <head>
+      <!-- Load plotly.js into the DOM -->
+   	<script src='https://cdn.plot.ly/plotly-2.4.2.min.js'></script>
+      <!-- <script src='./plot.js'></script> -->
+
+   </head>
+   
+   <body>
+      <div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+      <script> 
+
+         var x = []; // for plotting
+         fetch("test.wasm").then(bytes => bytes.arrayBuffer()) 
+            .then(mod => WebAssembly.compile(mod)) 
+            .then(module => {return new WebAssembly.Instance(module) }) 
+            .then(instance => {
+               for (var i = 0; i < 500; i ++) {
+                  x[i] = instance.exports.getanum(i);  // accessing a c function
+               }
+               // plotting template (from )
+               var trace = {
+                  x: x,
+                  type: 'histogram',
+               };
+               console.log(x);
+               var data = [trace];
+               Plotly.newPlot('myDiv', data);
+         });
+
+      </script> 
+   </body>
+
+</html>
