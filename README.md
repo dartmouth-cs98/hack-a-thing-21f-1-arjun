@@ -3,23 +3,24 @@
 
 ## What you built? 
 
-TODO: Short description of what you attempted to build
+I wrote a simple c program (`text_analysis.c`), compiled it to WebAssembly (`text_analysis.wasm`) using [WebAssembly Explorer](https://mbebenita.github.io/WasmExplorer/), and loaded that into a simple website (`index.html`) using the JavaScript fetch api.
 
 Include some screenshots.
 [How?](https://help.github.com/articles/about-readmes/#relative-links-and-image-paths-in-readme-files)
 
 ## Who Did What?
 
-TODO: who worked on what part?
+:-)
 
 ## What you learned
 
-TODO: what worked / what didn't work
+I learned that while the words used to describe what WebAssembly is and what it does well are kinda complicated, actually integrating it into a simple webpage isn't too difficult. On the other hand, it's not very clear how to integrate dynamic WebAssembly components into a simple webpage; I'd like to work on that next.
 
 ## Authors
 
-TODO: list of authors
+Arjun Srinivasan (and the tutorials below)
 
 ## Acknowledgments
 
-TODO: cite any tutorials followed here
+[TutorialsPoint](https://www.tutorialspoint.com/webassembly/webassembly_quick_guide.htm)
+
